@@ -1,0 +1,119 @@
+body {
+    background-color:white;
+    color: #66D7EB;
+    font-family: 'Georgia', serif !important;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    margin: 10px;
+    text-align: center;
+}
+.home {
+    position: relative;
+    width: 97.5vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../images/main_home.jpg');
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #F5E6D7;
+}
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1;
+}
+.home h1 {
+    text-align: center;
+    font-size: 4rem;          
+    font-weight: bold;        
+    margin-bottom: 20px;     
+}
+
+.home .btn {
+    margin-top: 30px;
+    background: linear-gradient(174deg, rgba(98,207,244,1) 0%, rgba(44,103,242,1) 100%);
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    color: #F5E6D7;
+    border: none;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+.home .btn:hover {
+    background-color: #7B4A3A; 
+}
+.home-buttons {
+    display: flex;
+    gap: 20px;
+}
+.body h4, .body h5 {
+    margin: 30px 40px;
+    text-align: justify;
+    line-height: 1.6;
+}
+.body h4 {
+    color: #51ACC5;
+}
+.body h5 {
+    color: #3E849E;
+}
+
+.aboutUs {
+    background-color: #e0f2fc;
+    color: #F5E6D7;
+    border-radius: 10px;
+    width: 95vw;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow:2px 2px 10px 2px #1C3D52;
+}
+
+.aboutUs-content {
+    
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.aboutUs h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #1C3D52;
+    margin-bottom: 20px;
+}
+
+.aboutUs-description, .aboutUs-mission {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: black;
+    margin: 20px 0;
+}
+
+.aboutUs-description {
+    font-weight: 300;
+}
+
+.aboutUs-mission {
+    font-weight: 500;
+}
+
+
+
+footer {
+    background-color: rgba(14, 81, 102, 0.3);
+    padding: 10px;
+    text-align: center;
+    color:#1C3D52;
+}
