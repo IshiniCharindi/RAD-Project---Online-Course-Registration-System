@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(135deg, rgba(220, 220, 220, 0.8), rgba(255, 255, 255, 0.8));
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+}
+
+.site-header {
+   background: linear-gradient(174deg, rgba(98,207,244,1) 0%, rgba(5,34,103,1) 53%);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.contact-body {
+    display: flex;
+    height: calc(100vh - 60px);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-body .left-side,
+.contact-body .right-side {
+    flex: 1;
+    height: 100%;
+}
+
+.contact-body .left-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-body .right-side {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-body .right-side form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-body .right-side form label {
+    font-size: 1.1rem;
+    color: #1C3D52;
+}
+
+.contact-body .right-side form input,
+.contact-body .right-side form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-body .right-side form input[type="submit"] {
+    background: linear-gradient(174deg, rgba(98,207,244,1) 0%, rgba(5,34,103,1) 53%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-body .right-side form input[type="submit"]:hover {
+    background: rgba(44, 103, 242, 1);
+}
